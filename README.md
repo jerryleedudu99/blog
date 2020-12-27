@@ -40,7 +40,7 @@ yum groupinstall "GNOME Desktop"
 ### 5、安装vncserver
 yum install vnc vnc-server
 
-###6、配置相关参数
+### 6、配置相关参数
 //采用gnome 桌面，其实也可以选其他的，
 vi  ~/.vnc/xstartup
 #!/bin/sh
@@ -57,7 +57,7 @@ vi /etc/sysconfig/vncserver
 加入
 VNCSERVERS="1:root" VNCSERVERARGS[1]="-geometry 1024x768"
 
-###7、启动vncserver
+### 7、启动vncserver
 //第一次启动过程中需要你输入后续登陆密码
 vncserver
 
@@ -67,7 +67,7 @@ ps –ef | more
 //后面也可以通过下面命令关闭服务
 Killall Xvnc
 
-###8、客户端连接vncserver
+### 8、客户端连接vncserver
  
 ![1](https://user-images.githubusercontent.com/68214934/103147201-19e07280-478e-11eb-9873-f2d591ac54ee.png)
 
